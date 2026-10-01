@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>PairLens 识缘</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="top">
+    <img src="icons/icon-48.png" alt="" width="34" height="34">
+    <div class="brand-text">
+      <div class="brand">识缘 <span>PairLens</span></div>
+      <div class="tagline">看清资料，再决定要不要认识</div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Who to analyse -->
+    <section class="card">
+      <div class="card-title">要了解谁？</div>
+      <div id="candidates" class="people" role="radiogroup" aria-label="页面上的知乎用户"></div>
+      <div id="emptyPeople" class="empty" hidden>
+        <div class="empty-icon" data-icon="search"></div>
+        <p id="emptyText">打开知乎上的择偶回答，或某位用户的主页，这里会列出可以了解的人。</p>
+      </div>
+      <details class="more">
+        <summary>粘贴其他人的主页链接</summary>
+        <div class="row"><input id="manualUrl" type="url" placeholder="https://www.zhihu.com/people/…"><button id="manualAdd" class="ghost" type="button">添加</button></div>
+      </details>
+    </section>
+
+    <!-- Action + progress -->
+    <section class="card action-card">
+      <button id="action" class="primary" type="button" disabled>
+        <span id="actionText">开始了解 TA</span>
+      </button>
+      <div id="progressWrap" class="progress-wrap" hidden>
+        <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="bar"></div></div>
+        <p id="stage" class="stage"></p>
+      </div>
+      <p id="notice" class="notice" hidden></p>
+      <p id="usage" class="usage"></p>
+      <div id="quotaBox" class="quota" hidden></div>
+    </section>
+
+    <!-- Queue -->
+    <section id="queueCard" class="card" hidden>
+      <div class="card-title">分析队列 <span class="sub">按顺序一个个来，最多 5 位</span></div>
+      <ol id="queue" class="queue"></ol>
+      <div id="recentBox" hidden>
+        <div class="card-title small">刚刚完成</div>
+        <ul id="recent" class="queue"></ul>
+      </div>
+    </section>
+
+    <!-- Result -->
+    <section id="result" class="card result" hidden aria-live="polite">
+      <div id="verdict" class="verdict">
+        <div id="verdictIcon" class="verdict-icon"></div>
+        <div>
+          <div id="resName" class="verdict-name"></div>
+          <div id="resLabel" class="verdict-label"></div>
+        </div>
+      </div>
+      <div id="imageOnly" class="image-only" hidden>
+        <p id="imageOnlyText"></p>
+        <div id="imageOnlyGroup"></div>
+      </div>
+      <div id="scores" class="scores"></div>
+      <div id="unlock" class="unlock" hidden>
+        <div class="unlock-title"><span class="ico" data-icon="lock"></span>竞争激烈度</div>
+        <div id="unlockGroup"></div>
+        <div class="row"><input id="code" type="text" maxlength="40" placeholder="输入验证码"><button id="unlockBtn" class="ghost" type="button">查看</button></div>
+        <p id="unlockMsg" class="tiny"></p>
+      </div>
+      <details class="why" open>
+        <summary>为什么这样判断</summary>
+        <ul id="reasons" class="reasons"></ul>
+      </details>
+      <p id="meta" class="tiny"></p>
+    </section>
+  </main>
+
+  <footer>
+    <label class="switch"><input id="notify" type="checkbox" checked><span class="slider"></span><span>完成时提醒我（通知＋提示音）</span></label>
+    <p class="tiny foot-line"><span>分数依据公开资料整理，不是身份认证。</span><span class="foot-links"><button id="saveImage" type="button" disabled>保存为图片</button><a href="about.html" target="_blank">关于</a></span></p>
+  </footer>
+
+  <dialog id="stopDialog">
+    <h3>要停止分析吗？</h3>
+    <p id="stopText">已经读到的资料会保留，下次可以接着分析。</p>
+    <div class="dialog-actions">
+      <button id="cancelStop" class="ghost" type="button" autofocus>继续分析</button>
+      <button id="confirmStop" class="danger" type="button">停止</button>
+    </div>
+  </dialog>
+  <dialog id="saveDialog">
+    <h3>保存为图片</h3>
+    <p>把当前的分析结果保存成一张图片。</p>
+    <div class="dialog-actions">
+      <button id="saveHidden" class="ghost" type="button">隐藏用户名</button>
+      <button id="savePlain" class="primary-sm" type="button" autofocus>保存</button>
+    </div>
+  </dialog>
+  <script src="popup.js"></script>
+</body>
+</html>

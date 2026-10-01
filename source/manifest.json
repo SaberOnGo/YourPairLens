@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "minimum_chrome_version": "120",
+  "name": "PairLens 识缘",
+  "version": "1.1.2",
+  "description": "分析知乎择偶回答者的公开资料：风险、真实度、真诚度、择偶意愿与竞争激烈度，附原文来源。",
+  "icons": { "16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png" },
+  "permissions": ["storage", "tabs", "scripting", "notifications", "offscreen"],
+  "host_permissions": ["https://www.zhihu.com/*", "https://zhuanlan.zhihu.com/*", "https://yourlifebook.app/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": ["https://www.zhihu.com/*", "https://zhuanlan.zhihu.com/*"],
+    "js": ["collector.js", "content.js"],
+    "run_at": "document_start"
+  }],
+  "options_page": "about.html",
+  "action": { "default_title": "PairLens 识缘", "default_popup": "popup.html", "default_icon": { "16": "icons/icon-16.png", "32": "icons/icon-32.png" } }
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>关于识缘 PairLens</title>
+<style>
+  :root { --bg: #f4f5f9; --card: #fff; --ink: #1f2430; --muted: #6e7587; --line: #e7e9f0; --brand: #5b5bd6; --brand-soft: #eeeefc; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14161c; --card: #1d2028; --ink: #e9ebf2; --muted: #9ba2b4; --line: #2c303b; --brand: #8a8af0; --brand-soft: #262a46; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.75 -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 40px 20px 60px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+  header img { width: 52px; height: 52px; border-radius: 12px; }
+  h1 { margin: 0; font-size: 24px; }
+  .tag { color: var(--muted); font-size: 14px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; margin-bottom: 14px; }
+  h2 { margin: 0 0 8px; font-size: 16px; }
+  p { margin: 6px 0; }
+  ol, ul { margin: 6px 0; padding-left: 20px; }
+  li { margin: 4px 0; }
+  .muted { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icons/icon-128.png" alt="">
+    <div><h1>识缘 PairLens</h1><div class="tag">看清资料，再决定要不要认识</div></div>
+  </header>
+
+  <section>
+    <h2>怎么用</h2>
+    <ol>
+      <li>在知乎上浏览择偶回答，或打开某位用户的主页。</li>
+      <li>点浏览器右上角的识缘图标，选中想了解的人，点「开始了解 TA」。</li>
+      <li>想同时了解几位，可以依次加入队列，识缘会逐个分析，完成后提醒你。</li>
+    </ol>
+    <p class="muted">每天至少可以分析 10 位，北京时间早上 8 点重置；已有分析结果不占次数。</p>
+  </section>
+
+  <section>
+    <h2>关于结果</h2>
+    <p>结果只作为参考，帮你决定要不要进一步认识，不是身份认证。建议点开结果里附的原文，自己再看一看。</p>
+  </section>
+
+  <section>
+    <h2>隐私</h2>
+    <p>识缘只在你点击开始后查看对方公开的知乎内容，不读取你的知乎账号信息。为了下次更快给出结果，分析结果会保存在识缘服务端。</p>
+  </section>
+
+  <p class="muted">识缘 PairLens · 版本 <span id="ver"></span></p>
+</div>
+<script src="about.js"></script>
+</body>
+</html>
