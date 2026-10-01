@@ -1,43 +1,16 @@
-<p align="center"><img src="docs/images/logo.png" width="96" alt="识缘 PairLens"></p>
+<p align="center"><img src="docs/images/logo.png" width="88" alt="识缘 PairLens"></p>
 
 <h1 align="center">识缘 PairLens</h1>
 
-<p align="center">在知乎看择偶回答时，点一下，就能看清这个人的公开资料靠不靠谱。</p>
+<p align="center">知乎择偶问题下，冒充单身的中介、到处发帖引流的、杀猪盘都不少，光看一篇回答很难分辨。<br>识缘是一个浏览器插件：看到一位回答者，点一下，它帮你把 TA 公开发过的内容过一遍，告诉你哪里对不上。</p>
 
-<p align="center"><a href="https://github.com/SaberOnGo/YourPairLens/releases/latest/download/PairLens.zip"><b>下载插件（PairLens.zip）</b></a></p>
+<p align="center"><a href="https://github.com/SaberOnGo/YourPairLens/releases/latest/download/PairLens.zip"><img src="docs/images/download.png" width="420" alt="下载识缘插件 PairLens.zip"></a></p>
+
+<p align="center">点上面的绿色按钮下载，解压后按下面 3 步装好就能用。</p>
 
 ---
 
-知乎上的“XX的你，择偶标准是怎样的”这类问题下，真诚找对象的人很多，冒充单身、替人发帖的中介，以及骗子、杀猪盘也不少。单看一篇回答很难分辨。
-
-识缘是一个 Chrome 浏览器插件。你在知乎上看到一位回答者，点一下插件，它会把这个人公开发过的回答、文章等资料过一遍，告诉你哪里对得上、哪里对不上，并附上原文链接，方便你自己核对。
-
-## 它能看出什么
-
-下面都是真实分析结果（为保护隐私，昵称和头像已打码）。
-
-| 同一个账号，几篇求偶帖的出生年、身高、学历都对不上 | 求偶帖里留 QQ 号引流 |
-| --- | --- |
-| <img src="docs/images/result-multi-persona.png" width="340"> | <img src="docs/images/result-qq.png" width="340"> |
-
-| 在好几个省、好几个城市的择偶问题下到处发帖 | 正常、具体的征友帖 |
-| --- | --- |
-| <img src="docs/images/result-multi-city.png" width="340"> | <img src="docs/images/result-real.png" width="340"> |
-
-常见的几种情况：
-
-- **同一个人，资料前后对不上**：这篇写 96 年、164cm、本科，那篇写 97 年、165cm、硕士，城市也从北京变成了上海。真人在自己的帖子里很少把出生年和身高写错。
-- **留 QQ、企鹅号等站外联系方式引流**，或者昵称、签名、帖子里写着“帮发”“代发”“接投稿”，发的其实是别人的资料。
-- **到处发**：同一篇帖子贴到好几个城市的问题下，或者在多个省份的择偶问题下发帖、关注一大堆不同城市的择偶问题。
-- **照搬别人的帖子**：征友帖和别人更早发的帖子大段重合。
-- **账号被知乎禁言、封禁或注销**，同时又有大量求偶内容。
-- 真诚的征友者也能看出来：资料具体，前后一致，有自己的生活细节。结果里会写“真实用户（未发现风险线索）”。
-
-识缘只看公开资料，每一条判断后面都有“查看原文”链接，可以点开自己再看一遍。
-
-## 下载
-
-点这里下载：[**PairLens.zip**](https://github.com/SaberOnGo/YourPairLens/releases/latest/download/PairLens.zip)
+## 下载后解压
 
 下载后，在文件上点右键，选“全部解压缩”（或用压缩软件解压），得到一个 **PairLens** 文件夹。这个文件夹以后不要删，也不要挪地方，插件就装在这里。
 
@@ -91,6 +64,39 @@
 
 结果只作为参考，帮你决定要不要进一步认识，不是身份认证。
 
+## 交流群
+
+加入 **LifeBook 交友 & 识缘反馈群**，交流使用问题、反馈误判，也可以认识新朋友。
+
+<img src="docs/images/group-qr.jpg" width="220">
+
+群二维码过期或群满时，请加微信 **after5050**，备注来由，邀您进群。
+
+---
+
+## 详细介绍：它能看出什么
+
+下面都是真实分析结果（为保护隐私，昵称和头像已打码）。
+
+| 同一个账号，几篇求偶帖的出生年、身高、学历都对不上 | 求偶帖里留 QQ 号引流 |
+| --- | --- |
+| <img src="docs/images/result-multi-persona.png" width="340"> | <img src="docs/images/result-qq.png" width="340"> |
+
+| 在好几个省、好几个城市的择偶问题下到处发帖 | 正常、具体的征友帖 |
+| --- | --- |
+| <img src="docs/images/result-multi-city.png" width="340"> | <img src="docs/images/result-real.png" width="340"> |
+
+常见的几种情况：
+
+- **同一个人，资料前后对不上**：这篇写 96 年、164cm、本科，那篇写 97 年、165cm、硕士，城市也从北京变成了上海。真人在自己的帖子里很少把出生年和身高写错。
+- **留 QQ、企鹅号等站外联系方式引流**，或者昵称、签名、帖子里写着“帮发”“代发”“接投稿”，发的其实是别人的资料。
+- **到处发**：同一篇帖子贴到好几个城市的问题下，或者在多个省份的择偶问题下发帖、关注一大堆不同城市的择偶问题。
+- **照搬别人的帖子**：征友帖和别人更早发的帖子大段重合。
+- **账号被知乎禁言、封禁或注销**，同时又有大量求偶内容。
+- 真诚的征友者也能看出来：资料具体，前后一致，有自己的生活细节。结果里会写“真实用户（未发现风险线索）”。
+
+识缘只看公开资料，每一条判断后面都有“查看原文”链接，可以点开自己再看一遍。
+
 ## 常见问题
 
 **要花钱吗？** 不用。每天至少可以分析 10 位，北京时间早上 8 点重置；已有分析结果的人不占次数。
@@ -102,14 +108,6 @@
 **插件更新了怎么办？** 重新下载 PairLens.zip，解压覆盖原来的 PairLens 文件夹，再到 `chrome://extensions` 页面点识缘卡片上的刷新按钮。
 
 **卡片上显示“错误”或者装不上？** 一般是选错了文件夹，要选到里面直接有 `manifest.json` 的那一层。
-
-## 交流群
-
-加入 **LifeBook 交友 & 识缘反馈群**，交流使用问题、反馈误判，也可以认识新朋友。
-
-<img src="docs/images/group-qr.jpg" width="220">
-
-群二维码过期或群满时，请加微信 **after5050**，备注来由，邀您进群。
 
 ## 隐私
 
